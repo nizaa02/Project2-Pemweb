@@ -1,0 +1,333 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: Georgia, 'Times New Roman', serif;
+    background-color: #faf7fc;
+    color: #5f4d6f;
+    line-height: 1.6;
+}
+.moodly-logo {
+    color: #70558c !important;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+.moodly-navbar .navbar-nav {
+    margin-left: auto;
+}
+.moodly-nav-link {
+    color: #70558c !important;
+    background-color: #e9def0;
+    padding: 7px 17px !important;
+    border-radius: 20px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+.moodly-nav-link:hover {
+    background-color: #d9c6e5;
+    color: #59436e !important;
+}
+.hero {
+    min-height: 555px;
+    padding: 80px 0;
+    background-color: #f5effa;
+    display: flex;
+    align-items: center;
+}
+.hero-content {
+    padding-top: 10px;
+}
+.hero-label {
+    color: #9477ad;
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+.hero h1 {
+    color: #70558c;
+    font-size: 70px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    margin-bottom: 5px;
+}
+.hero h2 {
+    color: #806496;
+    font-size: 28px;
+    margin-bottom: 18px;
+}
+.hero-text {
+    max-width: 500px;
+    color: #756a7d;
+    font-size: 17px;
+    margin-bottom: 28px;
+}
+.hero-button {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: #a98bc0;
+    padding: 11px 23px;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+.hero-button:hover {
+    color: white;
+    background-color: #8e70a8;
+}
+.music-illustration {
+    position: relative;
+    height: 330px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.music-circle {
+    width: 195px;
+    height: 195px;
+    border-radius: 50%;
+    background-color: #dfd0e9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #806496;
+    font-size: 60px;
+    box-shadow: 0 15px 30px rgba(112, 85, 140, 0.12);
+}
+.music-note {
+    position: absolute;
+    columns: #9e7cba;
+    font-size: 23px;
+}
+.note-one {
+    top: 40px;
+    right: 110px;
+}
+.note-two {
+    bottom: 55px;
+    left: 105px;
+}
+.note-three {
+    top: 105px;
+    left: 90px;
+}
+.intro {
+    background-color: #ffffff;
+    padding: 90px 0;
+}
+.section-label {
+    color: #9477ad;
+    font-size: 13px;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+.intro h2 {
+    color: #70558c;
+    font-size: 38px;
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+.intro p {
+    color: #756a7d;
+    max-width: 720px;
+}
+.music-note-card {
+    background-color: #eee5f4;
+    min-height: 210px;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(2deg);
+}
+.music-note-card .music-symbol {
+    color: #9b7ab5;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+.music-note-card p:last-child {
+    color: #70558c;
+    font-size: 20px;
+    line-height: 1.6;
+}
+.mood {
+    padding: 90px 0;
+    background-color: #f8f3fb;
+}
+.mood-heading {
+    text-align: center;
+    margin-bottom: 45px;
+}
+.mood-heading h2 {
+    color: #70558c;
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+.mood-heading p:last-child {
+    color: #756a7d;
+}
+.mood-card {
+    position: relative;
+    min-height: 215px;
+    padding: 35px;
+    border-radius: 22px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.mood-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(90, 70, 110, 0.10);
+}
+.mood-label {
+    display: inline-block;
+    background-color: rgba(255, 255, 225, 0.65);
+    color: #70558c;
+    padding: 5px 13px;
+    border-radius: 20px;
+    font-size: 13px;
+    margin-bottom: 22px;
+}
+.mood-card h3 {
+    color: #5f4d6f;
+    font-size: 27px;
+    margin-bottom: 7px;
+}
+.mood-card > p:not(.mood-label):not(.mood-arrow) {
+    color: #74687d;
+}
+.mood-arrow {
+    position: absolute;
+    right: 30px;
+    bottom: 10px;
+    color: #806496;
+    font-size: 24px;
+}
+.mood-sad {
+    background-color: #e3dcef;
+}
+.mood-chill {
+    background-color: #e9dfee;
+}
+.mood-study {
+    background-color: #e1e4f0;
+}
+.mood-happy {
+    background-color: #eee0ef;
+}
+.mood-night {
+    background-color: #ddd9ea;
+}
+.placeholder-section {
+    display: none;
+}
+.footer {
+    background-color: #70558c;
+    color: white;
+    text-align: center;
+    padding: 55px 20px;
+}
+.footer-logo {
+    font-size: 14px;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+.footer h3 {
+    font-size: 23px;
+}
+.footer small {
+    opacity: 0.8;
+}
+
+@media (max-width: 991px) {
+    .moodly-navbar .container {
+        flex-wrap: wrap;
+    }
+    .moodly-navbar .navbar-nav {
+        margin-left: 20px;
+    }
+    .hero {
+        text-align: center;
+    }
+    .hero-text {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .music-illustration {
+        margin-top: 35px;
+    }
+    .intro {
+        text-align: center;
+    }
+    .intro p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .music-note-card {
+        margin-top: 40px;
+    }
+}
+@media (max-width: 576px) {
+    .moodly-navbar .container {
+        flex-direction: column;
+        gap: 8px;
+        padding-bottom: 8px;
+    }
+    .moodly-navbar .navbar-nav {
+        margin-left: 0;
+    }
+    .moodly-logo {
+        font-size: 22px;
+    }
+    .moodly-nav-link {
+        font-size: 12px;
+        padding: 6px 13px !important;
+    }
+    .hero {
+        padding: 65px 0;
+    }
+    .hero h1 {
+        font-size: 48px;
+    }
+    .hero h2 {
+        font-size: 22px;
+    }
+    .hero-text {
+        font-size: 15px;
+    }
+    .music-circle {
+        width: 165px;
+        height: 165px;
+        font-size: 50px;
+    }
+    .music-illustration {
+        height: 250px;
+    }
+    .note-one {
+        right: 60px;
+    }
+    .note-two {
+        left: 55px;
+    }
+    .note-three {
+        left: 45px;
+    }
+    .intro,
+    .mood {
+        padding: 70px 0;
+    }
+    .intro h2,
+    .mood-heading h2 {
+        font-size: 30px;
+    }
+    .mood-card {
+        min-height: 190px;
+        padding: 27px;
+    }
+}
