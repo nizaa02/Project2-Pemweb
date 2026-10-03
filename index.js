@@ -3,37 +3,27 @@ const songs = {
         ["The Night We Met", "Lord Huron", "theNightWeMet.mp3"],
         ["Traitor", "Olivia Rodrigo", "traitor.mp3"],
         ["Glimpse of Us", "Joji", "glimpseOfUs.mp3"],
-        ["End of Beginning", "Joe Keery"],
-        ["Locked out of Heaven", "Bruno Mars"],
-        ["You're Gonna Live Forever in Me", "John Mayer"],
-        ["Deja Vu", "Olivia Rodrigo"],
-        ["Those Eyes", "New West"],
-        ["Talking to the Moon", "Bruno Mars"],
-        ["Back to Friends", "Sombr"]
+        ["End of Beginning", "Joe Keery", "endOfBeginning.mp3"],
+        ["Locked out of Heaven", "Bruno Mars", "lockedOutOfHeaven.mp3"],
+        ["You're Gonna Live Forever in Me", "John Mayer", "you'reGonnaLive.mp3"],
+        ["Deja Vu", "Olivia Rodrigo", "dejaVu.mp3"],
+        ["Those Eyes", "New West", "thoseEyes.mp3"],
+        ["Talking to the Moon", "Bruno Mars", "talkingToTheMoon.mp3"],
+        ["Back to Friends", "Sombr", "backToFriends.mp3"]
     ],
     chill: [
-        ["Snooze", "SZA"],
         ["I Like Me Better", "Lauv"],
         ["Until I Found You", "Stephen Sanchez"],
         ["Blue", "Yung Kai"],
-        ["Somebody's Pleasure"],
-        ["Lover", "Taylor Swift"],
-        ["Nobody Gets Me", "SZA"],
         ["Seasons", "Wave to Earth"],
-        ["About You", "The 1975"],
-        ["Say Yes to Heaven", "Lana Del Rey"]
+        ["About You", "The 1975"]
     ],
     study: [
-        ["Coffee", "beabadoobee"],
-        ["Cruel Summer", "Taylor Swift"],
         ["High School in Jakarta", "NIKI"],
         ["So High School", "Taylor Swift"],
         ["Shape of My Heart", "Backstreet Boys"],
         ["As It Was", "Harry Styles"],
-        ["Gorgeous", "Taylor Swift"],
-        ["Walking Back Home", "Vira Talisa"],
-        ["Double Take", "Dhruv"],
-        ["Every Summertime", "NIKI"]
+        ["Gorgeous", "Taylor Swift"]
     ],
     happy: [
         ["Jatuh Suka", "Tulus"],
