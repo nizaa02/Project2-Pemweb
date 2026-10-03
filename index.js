@@ -19,11 +19,11 @@ const songs = {
         ["About You", "The 1975", "aboutYou.mp3"]
     ],
     study: [
-        ["High School in Jakarta", "NIKI"],
-        ["So High School", "Taylor Swift"],
-        ["Shape of My Heart", "Backstreet Boys"],
-        ["As It Was", "Harry Styles"],
-        ["Gorgeous", "Taylor Swift"]
+        ["High School in Jakarta", "NIKI", "highSchool.mp3"],
+        ["So High School", "Taylor Swift", "soHighSchool.mp3"],
+        ["Shape of My Heart", "Backstreet Boys", "shapeOfMyHeart.mp3"],
+        ["As It Was", "Harry Styles", "asItWas.mp3"],
+        ["Gorgeous", "Taylor Swift", "gorgeus.mp3"]
     ],
     happy: [
         ["Jatuh Suka", "Tulus"],
