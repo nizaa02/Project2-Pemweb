@@ -1,8 +1,8 @@
 const songs = {
     sad: [
-        ["The Night We Met", "Lord Huron"],
-        ["Traitor", "Olivia Rodrigo"],
-        ["Glimpse of Us", "Joji"],
+        ["The Night We Met", "Lord Huron", "theNightWeMet.mp3"],
+        ["Traitor", "Olivia Rodrigo", "traitor.mp3"],
+        ["Glimpse of Us", "Joji", "glimpseOfUs.mp3"],
         ["End of Beginning", "Joe Keery"],
         ["Locked out of Heaven", "Bruno Mars"],
         ["You're Gonna Live Forever in Me", "John Mayer"],

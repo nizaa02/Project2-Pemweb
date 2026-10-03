@@ -102,7 +102,7 @@ body {
 }
 .music-note {
     position: absolute;
-    columns: #9e7cba;
+    color: #9e7cba;
     font-size: 23px;
 }
 .note-one {
@@ -173,6 +173,10 @@ body {
 .mood-heading p:last-child {
     color: #756a7d;
 }
+.mood-link {
+    text-decoration: none;
+    color: inherit;
+}
 .mood-card {
     position: relative;
     min-height: 215px;
@@ -224,11 +228,6 @@ body {
 .mood-night {
     background-color: #ddd9ea;
 }
-.mood-link {
-    display: block;
-    color: inherit;
-    text-decoration: none;
-}
 .mood-link:hover {
     color: inherit;
 }
@@ -245,7 +244,7 @@ body {
     color: #70558c;
     font-size: 55px;
     font-weight: bold;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
 }
 .mood-detail-heading p:last-child {
     color: #756a7d;
