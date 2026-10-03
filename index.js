@@ -4,19 +4,60 @@ const songs = {
         ["Traitor", "Olivia Rodrigo"],
         ["Glimpse of Us", "Joji"],
         ["End of Beginning", "Joe Keery"],
+        ["Locked out of Heaven", "Bruno Mars"],
+        ["You're Gonna Live Forever in Me", "John Mayer"],
+        ["Deja Vu", "Olivia Rodrigo"],
+        ["Those Eyes", "New West"],
+        ["Talking to the Moon", "Bruno Mars"],
+        ["Back to Friends", "Sombr"]
     ],
     chill: [
         ["Snooze", "SZA"],
         ["I Like Me Better", "Lauv"],
+        ["Until I Found You", "Stephen Sanchez"],
+        ["Blue", "Yung Kai"],
+        ["Somebody's Pleasure"],
+        ["Lover", "Taylor Swift"],
+        ["Nobody Gets Me", "SZA"],
+        ["Seasons", "Wave to Earth"],
+        ["About You", "The 1975"],
+        ["Say Yes to Heaven", "Lana Del Rey"]
     ],
     study: [
         ["Coffee", "beabadoobee"],
+        ["Cruel Summer", "Taylor Swift"],
+        ["High School in Jakarta", "NIKI"],
+        ["So High School", "Taylor Swift"],
+        ["Shape of My Heart", "Backstreet Boys"],
+        ["As It Was", "Harry Styles"],
+        ["Gorgeous", "Taylor Swift"],
+        ["Walking Back Home", "Vira Talisa"],
+        ["Double Take", "Dhruv"],
+        ["Every Summertime", "NIKI"]
     ],
     happy: [
-        ["Cruel Summer", "Taylor Swift"]
+        ["Jatuh Suka", "Tulus"],
+        ["Saat Bahagia", "Ungu"],
+        ["Magic", "Lyla"],
+        ["Berdua Bersama", "Jaz"],
+        ["Drop Dead", "Olivia Rodrigo"],
+        ["My Love Mine All Mine", "Mitski"],
+        ["Mine (Taylor's Version", "Taylor Swift"],
+        ["Just the Way You Are", "Bruno Mars"],
+        ["Style", "Taylor Swift"],
+        ["Mata ke Hati", "Hivi!"]
     ],
     night: [
         ["I Wanna Be Yours", "Arctic Monkeys"],
+        ["Kita Usahakan Rumah Itu", "Sal Priadi"],
+        ["Membasuh", "Hindia"],
+        ["Night Changes", "One Direction"],
+        ["Here With Me", "d4vd"],
+        ["8 Letters", "Why Don't We"],
+        ["Someone To Stay", "Vancouver Sleep Clinic"],
+        ["Anything You Want", "Reality Club"],
+        ["Fix You", "Coldplay"],
+        ["The Man Who Can't Be Moved", "The Script"]
     ]
 };
 const moodInfo = {
