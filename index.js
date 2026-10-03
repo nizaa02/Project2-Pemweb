@@ -12,11 +12,11 @@ const songs = {
         ["Back to Friends", "Sombr", "backToFriends.mp3"]
     ],
     chill: [
-        ["I Like Me Better", "Lauv"],
-        ["Until I Found You", "Stephen Sanchez"],
-        ["Blue", "Yung Kai"],
-        ["Seasons", "Wave to Earth"],
-        ["About You", "The 1975"]
+        ["I Like Me Better", "Lauv", "iLikeMeBetter.mp3"],
+        ["Until I Found You", "Stephen Sanchez", "untilFoundYou.mp3"],
+        ["Blue", "Yung Kai", "blue.mp3"],
+        ["Seasons", "Wave to Earth", "seasons.mp3"],
+        ["About You", "The 1975", "aboutYou.mp3"]
     ],
     study: [
         ["High School in Jakarta", "NIKI"],
