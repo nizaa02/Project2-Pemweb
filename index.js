@@ -26,16 +26,16 @@ const songs = {
         ["Gorgeous", "Taylor Swift", "gorgeus.mp3"]
     ],
     happy: [
-        ["Jatuh Suka", "Tulus"],
-        ["Saat Bahagia", "Ungu"],
-        ["Magic", "Lyla"],
-        ["Berdua Bersama", "Jaz"],
-        ["Drop Dead", "Olivia Rodrigo"],
-        ["My Love Mine All Mine", "Mitski"],
-        ["Mine (Taylor's Version", "Taylor Swift"],
-        ["Just the Way You Are", "Bruno Mars"],
-        ["Style", "Taylor Swift"],
-        ["Mata ke Hati", "Hivi!"]
+        ["Jatuh Suka", "Tulus", "jatuhSuka.mp3"],
+        ["Saat Bahagia", "Ungu", "saatBahagia.mp3"],
+        ["Magic", "Lyla", "magic.mp3"],
+        ["Berdua Bersama", "Jaz", "berduaBersama.mp3"],
+        ["Drop Dead", "Olivia Rodrigo", "dropDead.mp3"],
+        ["My Love Mine All Mine", "Mitski", "myLoveMine.mp3"],
+        ["Mine (Taylor's Version", "Taylor Swift", "mine.mp3"],
+        ["Just the Way You Are", "Bruno Mars", "justTheWay.mp3"],
+        ["Style", "Taylor Swift", "style.mp3"],
+        ["Mata ke Hati", "Hivi!", "mataKeHati.mp3"]
     ],
     night: [
         ["I Wanna Be Yours", "Arctic Monkeys"],
