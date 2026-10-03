@@ -96,6 +96,25 @@ function showNotification(message) {
         notification.remove();
     }, 2000);
 }
+function stopOtherAudio(currentAudio) {
+    document
+        .querySelectorAll(".song-audio")
+        .forEach(function (audio) {
+            if (audio !== currentAudio) {
+                audio.pause();
+            }
+        });
+    document
+        .querySelectorAll(".play-button")
+        .forEach(function (button) {
+            button.textContent = "▶";
+        });
+    document
+        .querySelectorAll(".saved-play-button")
+        .forEach(function (button) {
+            button.textContent = "▶";
+        });
+}
 const playlist = document.getElementById("playlist");
 if (playlist) {
     const url =
@@ -122,9 +141,7 @@ if (playlist) {
         songs[mood].forEach(
             function (song, index) {
                 const songCard = 
-                    document.createElement(
-                        "div"
-                    );
+                    document.createElement("div");
                 songCard.className = 
                     "song-card";
                 songCard.innerHTML = `
@@ -153,6 +170,10 @@ if (playlist) {
                             ▶
                         </button>
                     </div>
+                    <audio
+                        class="song-audio"
+                        src="${song[2]}">
+                    </audio>
                 `;
                 const saveButton = 
                     songCard.querySelector(
@@ -212,6 +233,34 @@ if (playlist) {
                         }
                     }
                 );
+                const playButton =
+                    songCard.querySelector(
+                        ".play-button"
+                    );
+                const audio =
+                    songCard.querySelector(
+                        ".song-audio"
+                    );
+                playButton.addEventListener(
+                    "click",
+                    function () {
+                        if (!audio.paused) {
+                            audio.pause();
+                            playButton.textContent = "▶";
+                        }
+                        else {
+                            stopOtherAudio(audio);
+                            audio.play();
+                            playButton.textContent = "II";
+                        }
+                    }
+                );
+                audio.addEventListener(
+                    "ended",
+                    function() {
+                        playButton.textContent = "▶";
+                    }
+                );
                 playlist.appendChild(
                     songCard
                 );
@@ -249,13 +298,54 @@ if (savedPlaylist) {
                         <h3>${song[0]}</h3>
                         <p>${song[1]}</p>
                     </div>
-                    <button
-                        class="delete-button"
-                        title="Hapus lagu"
-                    >
-                        ×
-                    </button>
+                    <div class="saved-song-actions">
+                        <button
+                            class="saved-song-actions">
+                            title="Putar / Pause">
+                            ▶
+                        </button>
+                        <button
+                            class="delete-button"
+                            title="Hapus lagu">
+                            ×
+                        </button>
+                    </div>
+                    <audio 
+                        class="song-audio"
+                        src="${song[2]}>"
+                    </audio>
                 `;
+                const playButton =
+                    songCard.querySelector(
+                        ".saved-play-button"
+                    );
+                const audio =
+                    songCard.querySelector(
+                        ".song-audio"
+                    );
+                playButton.addEventListener(
+                    "click",
+                    function () {
+                        if (!audio.paused) {
+                            audio.pause();
+                            playButton.textContent = 
+                                "▶";
+                        }
+                        else {
+                            stopOtherAudio(audio);
+                            audio.play();
+                            playButton.textContent =
+                                "II";
+                        }
+                    }
+                );
+                audio.addEventListener(
+                    "ended",
+                    function () {
+                        playButton.textContent =
+                            "▶";
+                    }
+                );
                 const deleteButton = 
                     songCard.querySelector(
                         ".delete-button"
