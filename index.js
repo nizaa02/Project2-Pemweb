@@ -270,7 +270,7 @@ if (savedPlaylist) {
                     </div>
                     <div class="saved-song-actions">
                         <button
-                            class="saved-song-actions">
+                            class="saved-play-button">
                             title="Putar / Pause">
                             ▶
                         </button>
@@ -282,7 +282,7 @@ if (savedPlaylist) {
                     </div>
                     <audio 
                         class="song-audio"
-                        src="${song[2]}>"
+                        src="${song[2]}"
                     </audio>
                 `;
                 const playButton =
