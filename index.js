@@ -38,16 +38,16 @@ const songs = {
         ["Mata ke Hati", "Hivi!", "mataKeHati.mp3"]
     ],
     night: [
-        ["I Wanna Be Yours", "Arctic Monkeys"],
-        ["Kita Usahakan Rumah Itu", "Sal Priadi"],
-        ["Membasuh", "Hindia"],
-        ["Night Changes", "One Direction"],
-        ["Here With Me", "d4vd"],
-        ["8 Letters", "Why Don't We"],
-        ["Someone To Stay", "Vancouver Sleep Clinic"],
-        ["Anything You Want", "Reality Club"],
-        ["Fix You", "Coldplay"],
-        ["The Man Who Can't Be Moved", "The Script"]
+        ["I Wanna Be Yours", "Arctic Monkeys", "iWannaBeYours.mp3"],
+        ["Kita Usahakan Rumah Itu", "Sal Priadi", "kitaUsahakan.mp3"],
+        ["Membasuh", "Hindia", "membasuh.mp3"],
+        ["Night Changes", "One Direction", "nightChanges.mp3"],
+        ["Here With Me", "d4vd", "hereWithMe.mp3"],
+        ["8 Letters", "Why Don't We", "8Letters.mp3"],
+        ["Someone To Stay", "Vancouver Sleep Clinic", "someone.mp3"],
+        ["Anything You Want", "Reality Club", "anythingYouWant.mp3"],
+        ["Fix You", "Coldplay", "fixYou.mp3"],
+        ["The Man Who Can't Be Moved", "The Script", "theMan.mp3"]
     ]
 };
 const moodInfo = {
