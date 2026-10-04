@@ -282,7 +282,7 @@ if (savedPlaylist) {
                     </div>
                     <audio 
                         class="song-audio"
-                        src="${song[2]}"
+                        src="${song[2]}">
                     </audio>
                 `;
                 const playButton =

@@ -431,6 +431,23 @@ body {
     font-size: 14px;
     margin: 0;
 }
+.saved-play-button {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #d5c3df;
+    border-radius: 50%;
+    background-color: white;
+    color: #806496;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.saved-play-button:hover {
+    background-color: #70558c;
+    color: white;
+    border-color: #70558c;
+    transform: scale(1.08);
+}
 .delete-button {
     width: 40px;
     height: 40px;
