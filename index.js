@@ -271,7 +271,6 @@ if (savedPlaylist) {
                     <div class="saved-song-actions">
                         <button
                             class="saved-play-button">
-                            title="Putar / Pause">
                             ▶
                         </button>
                         <button
