@@ -79,9 +79,7 @@ function showNotification(message) {
     const notification = document.createElement("div");
     notification.className = "save-notification";
     notification.textContent = message;
-    document.body.appendChild(
-        notification
-    );
+    document.body.appendChild(notification);
     setTimeout(function () {
         notification.remove();
     }, 2000);
@@ -107,20 +105,14 @@ function stopOtherAudio(currentAudio) {
 }
 const playlist = document.getElementById("playlist");
 if (playlist) {
-    const url =
-        new URLSearchParams(
-            window.location.search
-        );
-    const mood = 
-        url.get("mood") || "sad";
+    const url = new URLSearchParams(
+        window.location.search
+    );
+    const mood = url.get("mood") || "sad";
     const moodTitle =
-        document.getElementById(
-            "moodTitle"
-        );
+        document.getElementById("moodTitle");
     const moodDescription = 
-        document.getElementById(
-            "moodDescription"
-        );
+        document.getElementById("moodDescription");
     if (moodInfo[mood]) {
         moodTitle.textContent =
             moodInfo[mood].title;
@@ -179,11 +171,8 @@ if (playlist) {
                         }
                     );
                 if (alreadySaved) {
-                    saveButton.textContent =
-                        "♥";
-                    saveButton.classList.add(
-                        "saved"
-                    );
+                    saveButton.textContent = "♥";
+                    saveButton.classList.add("saved");
                 }
                 saveButton.addEventListener(
                     "click",
@@ -198,20 +187,13 @@ if (playlist) {
                                 }
                             );
                         if (!songExists) {
-                            savedSongs.push(
-                                song
-                            );
+                            savedSongs.push(song);
                             localStorage.setItem(
                                 "savedSongs",
-                                JSON.stringify(
-                                    savedSongs
-                                )
+                                JSON.stringify(savedSongs)
                             );
-                            saveButton.textContent =
-                                "♥";
-                            saveButton.classList.add(
-                                "saved"
-                            );
+                            saveButton.textContent = "♥";
+                            saveButton.classList.add("saved");
                             showNotification(
                                 `"${song[0]}" berhasil disimpan!`
                             );
@@ -275,9 +257,7 @@ if (savedPlaylist) {
         savedSongs.forEach(
             function (song, index) {
                 const songCard =
-                    document.createElement(
-                        "div"
-                    );
+                    document.createElement("div");
                 songCard.className =
                     "saved-song-card";
                 songCard.innerHTML = `
@@ -318,22 +298,19 @@ if (savedPlaylist) {
                     function () {
                         if (!audio.paused) {
                             audio.pause();
-                            playButton.textContent = 
-                                "▶";
+                            playButton.textContent = "▶";
                         }
                         else {
                             stopOtherAudio(audio);
                             audio.play();
-                            playButton.textContent =
-                                "II";
+                            playButton.textContent = "II";
                         }
                     }
                 );
                 audio.addEventListener(
                     "ended",
                     function () {
-                        playButton.textContent =
-                            "▶";
+                        playButton.textContent = "▶";
                     }
                 );
                 const deleteButton = 
@@ -343,15 +320,14 @@ if (savedPlaylist) {
                 deleteButton.addEventListener(
                     "click",
                     function () {
+                        audio.pause();
                         savedSongs.splice(
                             index,
                             1
                         );
                         localStorage.setItem(
                             "savedSongs",
-                            JSON.stringify(
-                                savedSongs
-                            )
+                            JSON.stringify(savedSongs)
                         );
                         showNotification(
                             `"${song[0]}" dihapus dari Lagu Tersimpan.`
@@ -364,9 +340,7 @@ if (savedPlaylist) {
                         );
                     }
                 );
-                savedPlaylist.appendChild(
-                    songCard
-                );
+                savedPlaylist.appendChild(songCard);
             }
         );
     }
